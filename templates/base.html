@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="static/css/base.css">
+    {% if title %}
+    <title>{{title}} - microblog</title>
+    {% else %}
+    <title>microblog</title>
+    {% endif %}
+  </head>
+  <body>
+      <div class="base_header"></div>
+      <div class="base_left_menu"></div>
+      <div class="base_footer"></div>
+      
+      <div class="content">
+
+        <div>Microblog: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
